@@ -1,8 +1,21 @@
 import cv2
 import requests
 import numpy as np
+import argparse
 
-r = requests.get('http://192.168.0.3:8080/video', auth=('user', 'password'), stream=True)
+# construct the argument parse and parse the arguments
+ap = argparse.ArgumentParser()
+ap.add_argument("-ip", type=str, help="ip addr of camera server ex: 192.169.0.1:1000")
+ap.add_argument("-usr", type=str, help="username if ip cam has authentication")
+ap.add_argument("-pass", type=str, help="password if ip cam has authentication")
+
+#ap.add_argument("-d", "--display", type=int, default=-1, help="Whether or not frames should be displayed")
+args = vars(ap.parse_args())
+hoststr = args["ip"]
+username = args["usr"]
+password = args["pass"]
+
+r = requests.get('http://' + hoststr + '/video', auth=(username, password), stream=True)
 if(r.status_code == 200):
     bytes = bytes()
     for chunk in r.iter_content(chunk_size=1024):
