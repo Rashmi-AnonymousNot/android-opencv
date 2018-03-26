@@ -52,8 +52,8 @@ Start the webcam server on your phone and take note of the ip address at the bot
 
 The syntax of the program call is as follows:
 
-    ```console
-    $ python ipcam.py -ip [ipaddr] -usr [username] -pass [password]
-    ```
+```console
+$ python ipcam.py -ip [ipaddr] -usr [username] -pass [password]
+  ```
 
 ## Part 2 to follow soon.
