@@ -1,9 +1,9 @@
 # Android OpenCV
 
 ## Description
-A demonstration of the OpenCV library, updated for the new requests lib that comes standard with Python. Most other repos I found with this info used the older `urllib`, and made heavy use of deprecaited functions that broke the code.
+A demonstration of the OpenCV library, updated to work with Requests. Most other repos I found with this info used the older `urllib`, and made heavy use of deprecaited functions that broke the code when used in python 3.0 and above.
 
-Basically, this is an update to Python 3.x and part 1 of a  tutorial on image recognition using OpenCV and tensorflow in Python. (You will not need tensorflow for this portion of the tutorial.)
+Basically, this is an update to Python 3.x and part 1 of a tutorial on live image recognition using OpenCV and tensorflow in Python. (You will not need tensorflow for this portion of the tutorial.)
 
 ## Dependencies
 
@@ -52,8 +52,8 @@ Start the webcam server on your phone and take note of the ip address at the bot
 
 The syntax of the program call is as follows:
 
-```console
+    ```console
     $ python ipcam.py -ip [ipaddr] -usr [username] -pass [password]
-```
+    ```
 
 ## Part 2 to follow soon.
