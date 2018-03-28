@@ -20,7 +20,7 @@ Basically, this is an update to Python 3.x and part 1 of a tutorial on live imag
     $ conda create -n androidCV pip python=3.5
     Solving enviornment: done
 
-    $ activate androidCV
+    $ source activate androidCV
     ```
 
 1. Make sure you have Python 3.0 or higher installed on your computer 
