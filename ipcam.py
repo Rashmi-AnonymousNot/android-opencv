@@ -3,13 +3,14 @@ import requests
 import numpy as np
 import argparse
 
-# construct the argument parse and parse the arguments
+#construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-ip", type=str, help="ip addr of camera server ex: 192.169.0.1:1000")
 ap.add_argument("-usr", type=str, help="username if ip cam has authentication")
 ap.add_argument("-pass", type=str, help="password if ip cam has authentication")
 
 #ap.add_argument("-d", "--display", type=int, default=-1, help="Whether or not frames should be displayed")
+
 args = vars(ap.parse_args())
 hoststr = args["ip"]
 username = args["usr"]
