@@ -1,7 +1,7 @@
 # Android OpenCV
 
 ## Description
-A demonstration of the OpenCV library, updated to work with Requests. Most other repos I found with this info used the older `urllib`, and made heavy use of deprecated functions that broke the code when used in python 3.0 and above.
+A demonstration of the OpenCV library, updated to work with Requests. Most other repos I found with this info used the older `urllib` and made heavy use of deprecated functions that broke the code when used in Python 3.0 and above.
 
 Basically, this is an update to Python 3.x and part 1 of a tutorial on live image recognition using OpenCV and tensorflow in Python. (You will not need tensorflow for this portion of the tutorial.)
 
@@ -14,7 +14,7 @@ Basically, this is an update to Python 3.x and part 1 of a tutorial on live imag
 
 ## Getting Started
 
-0. (Optional) I **strongly** recommend using a virtual environment like [Anaconda](https://www.anaconda.com/distribution/) for development. While it is not necessary, it prevents interference with any other python installations, and will be required for the latter portions of this tutorial. Once installed, the environment can be created and opened like so:
+0. (Optional) I **strongly** recommend using a virtual environment like [Anaconda](https://www.anaconda.com/distribution/) for development. While it is not necessary, it prevents interference with any other Python installations, and will be required for the latter portions of this tutorial. Once installed, the environment can be created and opened like so:
 
     ```console
     $ conda create -n androidCV pip python=3.5
